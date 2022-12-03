@@ -5,18 +5,18 @@ metadata:
 spec:
    replicas: 3
    selector:     
-    matchLabels:
-     app: myapps
+     matchLabels:
+      app: myapps
    template:
-     metadata:
-       name: vertex-pod
-       labels:
+      metadata:
+        name: vertex-pod
+        labels:
          app: myapps
-     spec:
-      containers:
-        - name: mycont
-          image: shivani999/myjavaimage3dec22:1
-          ports:
-            - containerPort: 8080
+      spec:
+        containers:
+          - name: mycont
+            image: shivani999/myjavaimage3dec22:1
+            ports:
+             - containerPort: 8080
 
 
